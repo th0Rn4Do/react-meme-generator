@@ -1,9 +1,10 @@
 import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-export default function App() {
+export default function App({ character }) {
   const [topTextBox, setTopTextBox] = useState('');
   const [bottomTextBox, setBottomTextBox] = useState('');
+  const [memeTemplate, setMemeTemplate] = useState('');
   return (
     <form
       onSubmit={(event) => {
@@ -25,8 +26,21 @@ export default function App() {
             onChange={(event) => setBottomTextBox(event.currentTarget.value)}
             id="bottomTextBox"
           />
+          <br />
+          <label htmlFor="memeTemplate">Meme template </label>
+          <input
+            value={memeTemplate}
+            onChange={(event) => setMemeTemplate(event.currentTarget.value)}
+            id="memeTemplate"
+          />
         </div>
-        <button onClick={() => {}}>Submit</button>
+        <br />
+        <p>a image has to go here</p>
+        <br />
+        <button onClick={() => {}}>Create meme</button>
+        <br />
+        <button onClick={() => {}}>Download</button>
+        <br />
       </div>
     </form>
   );
