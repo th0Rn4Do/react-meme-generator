@@ -1,4 +1,8 @@
-.App {
+* {
+  justify-content: center;
+}
+
+body {
   background-color: #ffffff;
   padding: 0px;
   height: 100vh;
@@ -9,13 +13,24 @@
 
 .App > div {
   background-color: #ffffff;
-  padding: 85px;
-  margin: 20px;
-  border: 1px solid darkblue;
-  box-sizing: border-box;
+  padding: 30px;
+  margin: 0px;
+  border: 4px solid darkblue;
+  box-sizing: content-box;
   border-radius: 0px;
-  width: 350px;
-  height: 350px;
-  font-size: 20px;
+  width: 450px;
+  height: 450px;
+  font-size: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > button {
+  margin: 20px;
+  font-size: 16px;
+  margin-top: 4px;
+  position: relative;
+  left: 50%;
+  align-self: center;
 }
