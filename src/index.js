@@ -1,6 +1,6 @@
 import './index.css';
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM, { createRoot } from 'react-dom/client';
 import App from './App';
 
 const Home = () => {
@@ -15,6 +15,10 @@ const Home = () => {
   return <App character={character} />;
 };
 
+createRoot(document.getElementById('root')).render;
+<Home />;
+
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -22,3 +26,4 @@ root.render(
     <App />
   </React.StrictMode>,
 );
+*/
