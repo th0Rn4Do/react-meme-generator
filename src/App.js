@@ -1,5 +1,9 @@
 import './App.css';
-import React, { useState } from 'react';
+import './GetApiCall.js';
+import './Image.js';
+import React, { useEffect, useState } from 'react';
+import GetApiCall from './GetApiCall.js';
+import Image from './Image.js';
 
 export default function App() {
   const [topTextBox, setTopTextBox] = useState('');
@@ -34,12 +38,14 @@ export default function App() {
             id="memeTemplate"
           />
         </div>
+        <Image />
         <br />
         <button onClick={() => {}}>Create meme</button>
         <br />
         <button onClick={() => {}}>Download</button>
         <br />
       </div>
+      {/* <GetApiCall /> */}
     </form>
   );
 }
